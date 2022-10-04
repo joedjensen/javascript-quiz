@@ -53,6 +53,12 @@ if (!event.target.hasAttribute('data-correct-answer')) {
     previousAnswer = "Correct!"
 }
 ```
+Function to sort array of score objects from high to low
+```Javascript
+function compareScoreObjects(a, b) {
+    return b.score - a.score 
+}
+```
 
 Lastly, we use some cute formatting to alternate background colors on our leaderboard
 ```Javascript
