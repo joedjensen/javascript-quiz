@@ -3,12 +3,109 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 3px;
+    margin:5px;
 }
 
+header p {
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    width: 50%;
+    align-content: center;
+}
+
+h2{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+a {
+    color: darkslateblue;
+}
+
+button {
+    background-color: darkslateblue;
+    color:white;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 1px;
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+}
+form {
+    margin: 10px;
+}
 
 main {
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+ol{
+    list-style-type: decimal;
+}
+
+.answers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: left;
+}
+.answers button {
+    margin: 1px;
+}
+
+.left-align {
+    width: 100%;
+    text-align: left;
+}
+
+ol {
+    counter-reset: count;
+    width: 200px;
+  }
+  
+  ol li {
+    list-style-type: none;
+    position: relative;
+  }
+ 
+  ol li:before {
+    counter-increment: count;
+    content: counter(count)" ";
+    margin-right: 0.5em;
+    display:inline-block;
+    padding:0 5px;
+   } 
+
+.previous-answer {
+    width: 100%;
+    display: none;
+    text-align: left;
+}
+
+.previous-answer.show {
+    display: block;
+}
+
+.even-scores{
+    background-color: lavender;
+}
+
+.odd-scores{
+    background-color: lavenderblush;
 }
