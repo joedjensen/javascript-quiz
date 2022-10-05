@@ -72,6 +72,9 @@ for (i = 0; i < array.length; i++) {
     highScoreList.appendChild(li)
 }
 ```
+And the resulting formatting
+
+![alt text](./assets/images/highscoress.png)
 
 ## License
 
